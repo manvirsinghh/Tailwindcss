@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex in tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<!-- Why h-full or size-full doesn't seem to work without h-screen
+1. How Tailwind's h-full works:
+h-full sets the height to 100% of the parent element.
+
+If the parent doesn't have a defined height, 100% has no reference, so it becomes meaningless and results in no visible height.
+
+2. What h-screen does:
+h-screen sets the height to 100% of the viewport height (i.e., the full screen).
+
+It's an absolute value: height: 100vh;, which does not depend on the parent element.
+
+3. What about size-full?
+size-full is a Tailwind shorthand for both w-full h-full.
+
+So same logic applies: h-full still needs the parent to have a defined height. -->
+
+
+<body class="h-screen">
+    <!-- <div class="bg-gray-200 size-full flex  flex-col items-center justify-center">
+        <div class="bg-red-300 size-30"></div>
+        <div class="bg-blue-300 size-30"></div>
+        <div class="bg-yellow-300 size-30"></div>
+        <div class="bg-lime-300 size-30"></div>
+    </div>
+     -->
+     <!-- flex enables Flexbox layout on an element, making its direct children flex items. -->
+    <div class="size-full bg-pink-100 flex flex-wrap content-start flex-col sm:flex-row">
+        <div class="bg-red-300 size-32 "></div>
+        <div class="bg-blue-300 size-32"></div>
+        <div class="bg-lime-300 size-32"></div>
+        <div class="bg-cyan-300 size-32"></div>
+        <div class="bg-gray-300 size-32"></div>
+        <div class="bg-pink-300 size-32"></div>
+        <div class="bg-green-300 size-32"></div>
+        <div class="bg-orange-300 size-32"></div>
+        <div class="bg-sky-300 size-32"></div>
+        <div class="bg-purple-300 size-32"></div>
+        <div class="bg-red-800 size-32"></div>
+        <div class="bg-orange-700 size-32"></div>
+    </div>
+</body>
+</html>

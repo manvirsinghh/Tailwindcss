@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints in tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="h-screen">
+    <!-- <div class="bg-red-700 h-full sm:bg-orange-700 md:bg-amber-300 lg:bg-lime-950 xl:bg-sky-500"></div> -->
+    <!-- <div class="sm:hidden ">
+       hello
+    </div> -->
+    <!-- In Tailwind CSS, if you want to hide or show elements on specific screen sizes, you can use the responsive utilities
+    for hidden and block (or other display properties like inline, flex, etc.). The hidden utility is used to hide
+    elements, and the block (or other display classes) utility is used to show elements.
+    Hiding Elements at Specific Breakpoints
+    To hide an element at certain breakpoints and show it on others, you can apply Tailwind's responsive hidden and
+    block classes.
+
+    Here's a breakdown of how to hide and show elements at different screen sizes -->
+
+
+    <!-- Hides on small screens and shows on larger screens -->
+<div class="sm:hidden md:block lg:block">
+  hello //it will be hidden on small screen ie from 640 px to 768px and rest on all screen it will be visible
+  </div>
+  
+  <!-- Shows only on medium screens (md) and larger -->
+  <!-- <div class="hidden md:block lg:block">
+    This will be hidden on small screens and shown on medium and large screens.
+  </div> -->
+  
+  <!-- Shows only on large screens (lg) and larger -->
+  <!-- <div class="hidden lg:block xl:block 2xl:block">
+    This will be hidden on small and medium screens, and shown only on large screens and up.
+  </div>
+  
+  Hides only on extra-large screens (xl)
+  <div class="block xl:hidden">
+    This will be visible on all screens, but hidden on screens 1280px and larger.
+  </div>
+  
+  <!-- Shows only on 2xl and larger -->
+  <!-- <div class="hidden 2xl:block">
+    This will be hidden on all screens smaller than 1536px.
+  </div>
+   --> 
+</html>

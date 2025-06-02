@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+    <h3 class="text-center ">Table</h3>
+    <div class="flex justify-center  mb-10">
+       
+        <table class="border-separate border border-gray-900  ">
+            <thead class=" bg-amber-800 text-white">
+              <tr class="bg-lime-500 ">
+                <th class="border border-gray-900">Sr No.</th>
+                <th class="border border-gray-900 ">State</th>
+                <th class="border border-gray-900 ">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-fuchsia-600 [&>*]:text-white font-extrabold">
+                <td class="border border-gray-900">1</td>
+                <td class="border border-gray-900 ">Indiana</td>
+                <td class="border border-gray-900 ">Indianapolis</td>
+              </tr>
+              <tr class="bg-teal-400 [&>*]:text-white font-extrabold">
+                <td class="border border-gray-900">2</td>
+                <td class="border border-gray-900">Ohio</td>
+                <td class="border border-gray-900 ">Columbus</td>
+              </tr>
+              <tr class="bg-sky-400 [&>*]:text-white font-extrabold">
+                <td class="border border-gray-900">3</td>
+                <td class="border border-gray-900 ">Michigan</td>
+                <td class="border border-gray-900 ">Detroit</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div class="flex justify-center ">
+       
+        <table class="border-collapse border border-gray-900  ">
+            <thead class=" bg-amber-800 text-white">
+              <tr>
+                <th class="border border-gray-900">Sr No.</th>
+                <th class="border border-gray-900 ">State</th>
+                <th class="border border-gray-900 ">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-900">1</td>
+                <td class="border border-gray-900 ">Indiana</td>
+                <td class="border border-gray-900 ">Indianapolis</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-900">2</td>
+                <td class="border border-gray-900">Ohio</td>
+                <td class="border border-gray-900 ">Columbus</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-900">3</td>
+                <td class="border border-gray-900 ">Michigan</td>
+                <td class="border border-gray-900 ">Detroit</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="flex justify-center mt-10">
+        <table class="bg-orange-500 text-center text-zinc-900 table-auto  ">
+            <caption class="caption-top font-semibold">
+              Table 3.1: Professional wrestlers and their signature moves.
+            </caption>
+            <thead class=" border-4 border-emerald-500 ">
+              <tr class=" border-4 border-emerald-500 ">
+                <th class=" border-4 border-emerald-500 ">Wrestler</th>
+                <th class=" border-4 border-emerald-500 ">Signature Move(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class=" border-4 border-emerald-500 ">
+                <td class=" border-4 border-emerald-500 ">"Stone Cold" Steve Austin</td>
+                <td class=" border-4 border-emerald-500 ">Stone Cold Stunner, Lou Thesz Press</td>
+              </tr>
+              <tr class=" border-4 border-emerald-500 ">
+                <td class=" border-4 border-emerald-500 ">Bret "The Hitman" Hart</td>
+                <td class=" border-4 border-emerald-500 ">The Sharpshooter</td>
+              </tr>
+              <tr class=" border-4 border-emerald-500 ">
+                <td class=" border-4 border-emerald-500 ">Razor Ramon</td>
+                <td class=" border-4 border-emerald-500 ">Razor's Edge, Fallaway Slam</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Toggle</title>
+  <link rel="stylesheet" href="output.css">
+  <script>
+    function toggleDarkMode() {
+      const root = document.getElementById('root');
+      root.classList.toggle('dark');
+      console.log('Toggled dark mode');
+    }
+  </script>
+</head>
+
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-all duration-300">
+
+  <div class="p-6">
+    <button onclick="toggleDarkMode()" class="border px-4 py-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+      Toggle Dark Mode
+    </button>
+    <h1 class="mt-6 text-3xl">Dark Mode Test</h1>
+    <p class="mt-2">Click the button to switch themes.</p>
+  </div>
+</body>
+
+</html>

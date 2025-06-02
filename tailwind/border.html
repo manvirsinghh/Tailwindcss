@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border with tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+    <!-- Small Rounded Corners -->
+    <div class="box rounded-sm bg-amber-300 w-50 ">
+        rounded-sm
+    </div>
+
+    <!-- Medium Rounded Corners -->
+    <div class="box rounded-md bg-amber-950 w-50">
+        rounded-md
+    </div>
+
+    <!-- Large Rounded Corners -->
+    <div class="box rounded-lg bg-orange-900 w-50">
+        rounded-lg
+    </div>
+
+    <!-- Extra Large Rounded Corners -->
+    <div class="box rounded-xl bg-blue-600 w-50">
+        rounded-xl
+    </div>
+
+    <!-- Top Rounded Corners -->
+    <div class="box rounded-t-lg bg-teal-500 w-50">
+        rounded-t-lg
+    </div>
+
+    <!-- Right Rounded Corners -->
+    <div class="box rounded-r-lg bg-purple-500 w-50">
+        rounded-r-lg
+    </div>
+
+    <!-- Bottom Rounded Corners -->
+    <div class="box rounded-b-lg bg-red-500 w-50">
+        rounded-b-lg
+    </div>
+
+    <!-- Left Rounded Corners -->
+    <div class="box rounded-l-lg bg-green-500 w-50">
+        rounded-l-lg
+    </div>
+ 
+    
+    
+    <div class="flex gap-6 mt-5">
+        <div class="border border-indigo-600 size-50"></div>
+<div class="border-2 border-indigo-600 size-50"></div>
+<div class="border-4 border-indigo-600 size-50"></div>
+<div class="border-8 border-indigo-600 size-50"></div>
+<div class="border-4 border-l-amber-600 size-50"></div>
+<div class="border-t-8 border-emerald-900 size-50"></div>
+<div class="border-x-8 border-lime-400 size-50"></div> 
+<div class="border-y-2 border-lime-500 size-50"></div>
+    </div>
+    <!-- //divide properties -->
+    <!-- divide-y: Adds dividers between vertical children (rows).
+
+    divide-x: Adds dividers between horizontal children (columns).
+    
+    divide-black: Makes the dividers black. -->
+    <div class="divide-y divide-red-500">
+        <div class="p-4">Item 1</div>
+        <div class="p-4">Item 2</div>
+        <div class="p-4">Item 3</div>
+    </div>
+    <div class="flex divide-x divide-black">
+        <div class="p-4">Item 1</div>
+        <div class="p-4">Item 2</div>
+        <div class="p-4">Item 3</div>
+    </div>
+    <label for="email">Email:</label><br>
+    <input class="border-2 border-orange-700 focus:border-lime-600" placeholder="enter the email here "/>     
+    <div class="container flex gap-20">
+        <div class="border-4 border-dotted size-40"></div>   
+    <div class="border-2 border-dashed size-40"></div>
+    <div class="border-8 border-solid size-50"></div>
+    <div class="border-2 border-double size-40"></div>
+    </div>
+    <button class="bg-cyan-500 shadow-lg shadow-cyan-500 p-3 rounded-2xl ">Subscribe</button>
+<button class="bg-blue-500 shadow-lg shadow-blue-500 p-3 rounded-2xl">Subscribe</button>
+<button class="bg-indigo-500 shadow-lg shadow-indigo-500 p-3 rounded-2xl">Subscribe</button>
+
+</body>
+</html>

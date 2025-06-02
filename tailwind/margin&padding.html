@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about margin and padding</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2 class="bg-cyan-400 pt-[1px]">heading 2</h2>
+    <span class="bg-amber-500 ml-10 mt-10 pl-10 pt-10 block">Span with margin and padding </span>
+    <h1 class="bg-red-950 text-white p-5 m-1 ">Heading tag 1</h1>
+    <h1 class="bg-red-950 text-white px-5 mx-13 mt-5 text-center">Heading tag 1</h1>
+    <h1 class="bg-red-700 text-white py-2 mx-10 mt-7 text-right">Heading tag 1</h1>
+
+</body>
+
+</html>
+
+
+<!-- main  catching points
+
+QUES1 :-why span tag takes margin and padding from left and right not from top and bottom? -->
+<!-- ANS1:-the <span> tag having padding and margin applied only on the left and right (and not on the top and bottom) is due to the fact that the <span> element is an inline element by default. 
+    We have to add block in class to apply margin and padding from top and bottom both -->
+
+<!-- QUES2:-How to give 1 px padding and margin? -->
+<!-- ANS2:-You can use custom values with Tailwind's arbitrary value feature by using square brackets []. -->
+<!-- <div class="p-[1px] m-[1px]">
+    Content here
+</div>
+Explanation:
+p-[1px]: Applies 1px padding on all sides (top, right, bottom, left).
+
+m-[1px]: Applies 1px margin on all sides (top, right, bottom, left).
+
+If you want to apply it to individual sides:
+Top padding/margin: pt-[1px] or mt-[1px]
+
+Right padding/margin: pr-[1px] or mr-[1px]
+
+Bottom padding/margin: pb-[1px] or mb-[1px]
+
+Left padding/margin: pl-[1px] or ml-[1px] -->
+
+
+<!-- QUES3:-Difference between margin and padding in tailwind version 3 and version 4?
+ANS:- In tailwind version 3 , margin and padding has defined range of values
+ we cannot give custom value to margin and padding but in version 4 we can give custom value to margin and padding. --> 

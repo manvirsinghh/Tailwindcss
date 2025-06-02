@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Navbar</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-gray-800">MySite</div>
+
+        <!-- Hamburger menu button (mobile) -->
+        <div class="md:hidden">
+          <input type="checkbox" id="toggle-menu" class="hidden peer" />
+          <label for="toggle-menu" class="cursor-pointer">
+            <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </label>
+        </div>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+        </div>
+      </div>
+
+      <!-- Mobile menu (toggle with peer) -->
+      <div class="peer-checked:flex hidden flex-col space-y-2 pb-4 md:hidden">
+        <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
